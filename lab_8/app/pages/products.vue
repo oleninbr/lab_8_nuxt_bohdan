@@ -137,7 +137,6 @@ const changeSort = (key: string) => {
       <div v-else-if="error" class="error">Помилка завантаження даних: {{ error.message }}</div>
     </div>
 
-    <!-- Пагінація -->
     <div class="pagination">
       <button :disabled="currentPage === 1" class="btn" @click="currentPage--">
         Назад
@@ -155,7 +154,7 @@ const changeSort = (key: string) => {
 </template>
 
 <style>
-/* Загальні стилі */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -168,7 +167,6 @@ const changeSort = (key: string) => {
   margin-bottom: 20px;
 }
 
-/* Пошук */
 .search-wrap {
   margin-bottom: 20px;
   text-align: center;
@@ -181,7 +179,6 @@ const changeSort = (key: string) => {
   border-radius: 5px;
 }
 
-/* Таблиця */
 .table-container {
   overflow-x: auto;
 }
@@ -212,7 +209,7 @@ const changeSort = (key: string) => {
   object-fit: cover;
 }
 
-/* Рейтинг */
+
 .high-rating {
   color: green;
 }
@@ -221,7 +218,6 @@ const changeSort = (key: string) => {
   color: red;
 }
 
-/* Завантаження та помилки */
 .loading,
 .error {
   text-align: center;
@@ -233,7 +229,6 @@ const changeSort = (key: string) => {
   color: red;
 }
 
-/* Пагінація */
 .pagination {
   display: flex;
   justify-content: center;
